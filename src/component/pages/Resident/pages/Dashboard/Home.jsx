@@ -407,7 +407,7 @@ useEffect(() => {
   {/* Header */}
   <div className="flex items-center justify-between mb-6">
     <h2 className="text-lg text-blue-600 font-semibold">Maintenances Details</h2>
-    <a href="http://localhost:5173/resident/personal_detail" className="text-blue-500 hover:underline text-sm font-medium">
+    <a href="https://sms-peach-gamma.vercel.app/resident/personal_detail" className="text-blue-500 hover:underline text-sm font-medium">
       View All
     </a>
   </div>
