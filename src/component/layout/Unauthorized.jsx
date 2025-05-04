@@ -19,7 +19,7 @@ const Unauthorized = () => {
                 </div>
                 <p className='text-2xl font-bold mb-5 text-white'>404 - PAGE NOT FOUND</p>
                 <p className='text-center mb-5 text-lg font-semibold max-[403px]:text-sm'>The page you're seeking has vanished into thin air.<br /> Maybe it’s been renamed, relocated, or hidden in the shadows.</p>
-                <Link to={"/"} className='px-5 py-2 max-[426px]:px-4 max-[426px]:py-[6px] bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-full font-semibold shadow-lg hover:from-orange-600 hover:to-yellow-600 transition duration-200'>
+                <Link to={"/"} className='px-5 py-2 max-[426px]:px-4 max-[426px]:py-[6px] bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-full font-semibold shadow-lg hover:from-blue-600 hover:to-blue-600 transition duration-200'>
                     GO TO HOMEPAGE
                 </Link>
             </div>

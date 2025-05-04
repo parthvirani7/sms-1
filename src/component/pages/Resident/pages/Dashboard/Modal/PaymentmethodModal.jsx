@@ -31,7 +31,7 @@ const PaymentmethodModal = ({close1,close2}) => {
                     <div
                         onClick={() => setSelectedMethod("Master Card")}
                         className={`flex items-center p-3 border rounded-lg cursor-pointer ${selectedMethod === "Master Card"
-                            ? "border-blue-500 bg-orange-100"
+                            ? "border-blue-500 bg-blue-100"
                             : "border-gray-300"
                             }`}
                     >
@@ -45,7 +45,7 @@ const PaymentmethodModal = ({close1,close2}) => {
                     <div
                         onClick={() => setSelectedMethod("Visa Card")}
                         className={`flex items-center p-3 border rounded-lg cursor-pointer ${selectedMethod === "Visa Card"
-                            ? "border-blue-500 bg-orange-100"
+                            ? "border-blue-500 bg-blue-100"
                             : "border-gray-300"
                             }`}
                     >
@@ -59,7 +59,7 @@ const PaymentmethodModal = ({close1,close2}) => {
                     <div
                         onClick={() => setSelectedMethod("Cash Payment")}
                         className={`flex items-center p-3 border rounded-lg cursor-pointer ${selectedMethod === "Cash Payment"
-                            ? "border-blue-500 bg-orange-100"
+                            ? "border-blue-500 bg-blue-100"
                             : "border-gray-300"
                             }`}
                     >

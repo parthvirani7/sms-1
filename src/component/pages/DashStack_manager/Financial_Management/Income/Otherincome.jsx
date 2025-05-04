@@ -93,7 +93,7 @@ const Otherincome = () => {
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-semibold">Other Income</h1>
           <button
-            className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white px-4 py-2 rounded-md hover:bg-orange-600"
+            className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-600"
             onClick={handleCreate}
           >
             Create Other Income

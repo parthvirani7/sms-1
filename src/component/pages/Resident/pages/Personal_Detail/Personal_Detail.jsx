@@ -164,130 +164,134 @@ const Personal_Detail = () => {
           {activeTab === "Owner" && (
             <div>
               {/* Profile Section */}
-              <div className="bg-white p-6 shadow rounded-md">
-                <div className="flex flex-wrap gap-6 items-center justify-between max-[425px]:flex-col">
-                  <div className="flex flex-wrap items-center gap-6 max-[425px]:flex-col">
-                    <img
-                      src="https://res.cloudinary.com/ddf3pgcld/image/upload/v1733770800/shfpe3pccvr5qrpuldzh.png"
-                      alt="Profile"
-                      className="rounded-full w-24 h-24 md:w-36 md:h-36 border border-gray-300"
-                    />
-                    <div>
-                      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-gray-700">
-                        {[
-                          ["Full Name", FormData.Fullname || ""],
-                          ["Phone Number", FormData.Phone || ""],
-                          ["Email Address", FormData.Email || ""],
-                          ["Gender", FormData.Gender || ""],
-                          ["Wing", FormData.Wing || ""],
-                          ["Age", FormData.Age || ""],
-                          ["Unit", FormData.Unit || ""],
-                          ["Relation", FormData.Relation || ""],
-                        ].map(([label, value]) => (
-                          <p key={label}>
-                            <span className="font-medium">{label}:</span> <br />
-                            <span className="text-[#a7a7a7]">{value}</span>
-                          </p>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="space-y-3 flex-1 max-w-sm">
-                    <div className="flex items-center gap-3 p-3 bg-gray-50 border rounded-md max-[425px]:w-[14px]">
-                      <FaFileAlt className="text-blue-500" />
-                      <div>
-                        <p>Front Side</p>
-                        <p className="text-xs text-gray-500">img size</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3 p-3 bg-gray-50 border rounded-md max-[425px]:w-[14px]">
-                      <FaFileAlt className="text-blue-500" />
-                      <div>
-                        <p>Back Side</p>
-                        <p className="text-xs text-gray-500">img size</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div className="bg-white p-4 sm:p-6 shadow rounded-md">
+  <div className="flex flex-col lg:flex-row gap-6">
+    {/* Left Section: Profile Image + Details */}
+    <div className="flex flex-col sm:flex-row items-center gap-4 flex-1">
+      <img
+        src="https://res.cloudinary.com/ddf3pgcld/image/upload/v1733770800/shfpe3pccvr5qrpuldzh.png"
+        alt="Profile"
+        className="rounded-full w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 border border-gray-300"
+      />
+      <div className="w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-gray-700 mt-4 sm:mt-0">
+          {[
+            ["Full Name", FormData.Fullname || ""],
+            ["Phone Number", FormData.Phone || ""],
+            ["Email Address", FormData.Email || ""],
+            ["Gender", FormData.Gender || ""],
+            ["Wing", FormData.Wing || ""],
+            ["Age", FormData.Age || ""],
+            ["Unit", FormData.Unit || ""],
+            ["Relation", FormData.Relation || ""],
+          ].map(([label, value]) => (
+            <p key={label}>
+              <span className="font-medium">{label}:</span> <br />
+              <span className="text-[#a7a7a7]">{value}</span>
+            </p>
+          ))}
+        </div>
+      </div>
+    </div>
 
-              {/* Members Section */}
-              <div className="bg-white p-4 rounded-lg mt-5">
-                <p className="mb-3 font-semibold text-lg">
-                  Member : ({FormData?.members?.length ?? 0})
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-                  {FormData.members?.map((e, index) => (
-                    <div
-                      className="bg-white shadow-md rounded-md relative"
-                      key={index}
-                    >
-                      <div className="flex justify-between items-center mb-3 rounded-t-lg p-2 bg-[#5678e9]">
-                        <h2 className="text-lg font-semibold text-white">
-                          {e.fullName}
-                        </h2>
-                      </div>
-                      <div className="flex flex-col gap-2 mb-4 p-2">
-                        <div className="text-sm text-gray-500 flex justify-between">
-                          Email
-                          <span className="ml-2 text-base font-semibold text-gray-700">
-                            {e.email}
-                          </span>
-                        </div>
-                        <div className="text-gray-500 flex justify-between">
-                          Phone Number
-                          <span className="text-black">{e.phone}</span>
-                        </div>
-                        <div className="text-gray-500 flex justify-between">
-                          Age
-                          <span className="text-black">{e.age}</span>
-                        </div>
-                        <div className="text-gray-500 flex justify-between">
-                          Gender
-                          <span className="text-black">{e.gender}</span>
-                        </div>
-                        <div className="text-gray-500 flex justify-between">
-                          Relation
-                          <span className="text-black">{e.Relation}</span>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+    {/* Right Section: Documents */}
+    <div className="flex flex-col gap-4 w-full lg:max-w-xs">
+      <div className="flex items-center gap-3 p-3 bg-gray-50 border rounded-md">
+        <FaFileAlt className="text-blue-500 text-lg" />
+        <div>
+          <p>Front Side</p>
+          <p className="text-xs text-gray-500">img size</p>
+        </div>
+      </div>
+      <div className="flex items-center gap-3 p-3 bg-gray-50 border rounded-md">
+        <FaFileAlt className="text-blue-500 text-lg" />
+        <div>
+          <p>Back Side</p>
+          <p className="text-xs text-gray-500">img size</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-              {/* Vehicles Section */}
-              <div className="bg-white p-4 rounded-lg mt-5">
-                <p className="mb-3 font-semibold text-lg">
-                  Vehicle : ({FormData?.vehicles?.length ?? 0})
-                </p>
-                <div className="grid |grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
-                  {FormData.vehicles?.map((e, index) => (
-                    <div
-                      className="bg-white shadow-md rounded-md relative"
-                      key={index}
-                    >
-                      <div className="flex justify-between items-center mb-3 rounded-t-lg p-2 bg-[#5678e9]">
-                        <h2 className="text-lg font-semibold text-white">
-                          {e.type}
-                        </h2>
-                      </div>
-                      <div className="flex flex-col gap-2 mb-4 p-2">
-                        <div className="text-sm text-gray-500 flex justify-between">
-                          Vehicle Name
-                          <span className="ml-2 text-base font-semibold text-gray-700">
-                            {e.name}
-                          </span>
-                        </div>
-                        <div className="text-gray-500 flex justify-between">
-                          Vehicle Number
-                          <span className="text-black">{e.number}</span>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+
+{/* Members Section */}
+<div className="bg-white p-4 rounded-lg mt-5">
+  <p className="mb-3 font-semibold text-lg">
+    Member : ({FormData?.members?.length ?? 0})
+  </p>
+  <div className="grid gap-5 justify-center sm:justify-start grid-cols-[repeat(auto-fit,minmax(250px,350px))]">
+    {FormData.members?.map((e, index) => (
+      <div
+        className="bg-white shadow-md rounded-md relative"
+        key={index}
+      >
+        <div className="flex justify-between items-center mb-3 rounded-t-lg p-2 bg-[#5678e9]">
+          <h2 className="text-lg font-semibold text-white">
+            {e.fullName}
+          </h2>
+        </div>
+        <div className="flex flex-col gap-3 mb-4 p-2">
+          <div className="text-sm text-gray-500 flex flex-col sm:flex-row sm:justify-between">
+            <span>Email</span>
+            <span className="text-base font-semibold text-gray-700">{e.email}</span>
+          </div>
+          <div className="text-gray-500 flex flex-col sm:flex-row sm:justify-between">
+            <span>Phone Number</span>
+            <span className="text-black">{e.phone}</span>
+          </div>
+          <div className="text-gray-500 flex flex-col sm:flex-row sm:justify-between">
+            <span>Age</span>
+            <span className="text-black">{e.age}</span>
+          </div>
+          <div className="text-gray-500 flex flex-col sm:flex-row sm:justify-between">
+            <span>Gender</span>
+            <span className="text-black">{e.gender}</span>
+          </div>
+          <div className="text-gray-500 flex flex-col sm:flex-row sm:justify-between">
+            <span>Relation</span>
+            <span className="text-black">{e.Relation}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+{/* Vehicles Section */}
+<div className="bg-white p-4 rounded-lg mt-5">
+  <p className="mb-3 font-semibold text-lg">
+    Vehicle : ({FormData?.vehicles?.length ?? 0})
+  </p>
+  <div className="grid gap-5 justify-center sm:justify-start grid-cols-[repeat(auto-fit,minmax(250px,350px))]">
+    {FormData.vehicles?.map((e, index) => (
+      <div
+        className="bg-white shadow-md rounded-md relative"
+        key={index}
+      >
+        <div className="flex justify-between items-center mb-3 rounded-t-lg p-2 bg-[#5678e9]">
+          <h2 className="text-lg font-semibold text-white">
+            {e.type}
+          </h2>
+        </div>
+        <div className="flex flex-col gap-3 mb-4 p-2">
+          <div className="text-sm text-gray-500 flex flex-col sm:flex-row sm:justify-between">
+            <span>Vehicle Name</span>
+            <span className="text-base font-semibold text-gray-700">{e.name}</span>
+          </div>
+          <div className="text-gray-500 flex flex-col sm:flex-row sm:justify-between">
+            <span>Vehicle Number</span>
+            <span className="text-black">{e.number}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+
 
               {/* Paid and Pending Maintenance */}
               {[

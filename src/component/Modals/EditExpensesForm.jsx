@@ -177,7 +177,7 @@ const EditExpensesForm = ({ setEditData, }) => {
           </button>
           <button
             type="submit"
-            className="px-4 py-2 text-white rounded-md font-semibold bg-gradient-to-r from-orange-400 to-red-500 hover:from-blue-500 hover:to-red-600"
+            className="px-4 py-2 text-white rounded-md font-semibold bg-gradient-to-r from-blue-400 to-red-500 hover:from-blue-500 hover:to-red-600"
           >
             Save
           </button>

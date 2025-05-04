@@ -113,7 +113,7 @@ const Financial_Management = () => {
     </div>
 
               {/* Set Maintenance Button */}
-              <button onClick={OpenMaintenance} className="px-4 py-2 w-full lg:w-auto bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-lg font-semibold shadow-lg hover:from-orange-600 hover:to-yellow-600 transition duration-200">
+              <button onClick={OpenMaintenance} className="px-4 py-2 w-full lg:w-auto bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-lg font-semibold shadow-lg hover:from-blue-600 hover:to-blue-600 transition duration-200">
                 Set Maintenance
               </button>
               {ShowMaintenance && (

@@ -447,7 +447,7 @@ useEffect(() => {
               <div className="flex justify-between items-center">
                 <span className="text-sm font-medium text-gray-600">Status</span>
                 <span className={`text-xs font-semibold py-1 px-2 rounded ${
-                  isPaid ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'
+                  isPaid ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'
                 }`}>
                   {isPaid ? "Paid" : "Pending"}
                 </span>

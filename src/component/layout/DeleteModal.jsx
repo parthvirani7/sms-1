@@ -21,7 +21,7 @@ const DeleteModal = (props) => {
                         />
                         <button
                             onClick={props.DeleteClick}
-                            className="bg-[#e74c3c] hover:bg-orange-600 text-white w-1/2 font-semibold py-1 rounded-lg text-sm"
+                            className="bg-[#e74c3c] hover:bg-blue-600 text-white w-1/2 font-semibold py-1 rounded-lg text-sm"
                         >
                             Delete
                         </button>

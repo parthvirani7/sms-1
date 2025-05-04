@@ -1,8 +1,8 @@
 import axios from "axios";
 
 // // const url = 'https://society-management-app-server.onrender.com'
-// const url = "https://civicnest-backend.onrender.com";
-const url = 'https://sms-backend-blue.vercel.app'
+const url = "https://civicnest-backend.onrender.com";
+// const url = 'https://sms-backend-blue.vercel.app'
 
 
 axios.interceptors.request.use(

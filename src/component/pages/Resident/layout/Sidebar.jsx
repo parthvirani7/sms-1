@@ -45,7 +45,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname === "/resident/home" && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <MdDashboard className="inline mr-2" />
             Overview
@@ -59,7 +59,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/resident/personal_detail") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <BiSolidUserDetail className="inline mr-2" />
             Personal Detail
@@ -71,7 +71,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/resident/service_and_complaint") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <BsFillBoxSeamFill className="inline mr-2" />
             Service And Complaint
@@ -83,7 +83,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/resident/events_participation") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <MdDateRange className="inline mr-2" />
             Events Participation
@@ -146,7 +146,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/resident/payment_portal") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <FaCcAmazonPay className="inline mr-2" />
             Payment Portal
@@ -186,7 +186,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/resident/security_protocols") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <MdSecurity className="inline mr-2" />
             Security Protocols

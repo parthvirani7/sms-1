@@ -27,7 +27,7 @@ const DeleteImportantNumbersModal = ({ _id, ClosedeleteContact, contacts, setCon
                             onClick={ClosedeleteContact}
                             CloseName='Cancel'
                         />
-                        <button onClick={deletedata} className={`bg-[#e74c3c] hover:bg-orange-600 text-white w-1/2 font-semibold py-1 rounded-lg text-sm ${loading && 'opacity-50 cursor-not-allowed cursor-progress'}`} disabled={loading}>
+                        <button onClick={deletedata} className={`bg-[#e74c3c] hover:bg-blue-600 text-white w-1/2 font-semibold py-1 rounded-lg text-sm ${loading && 'opacity-50 cursor-not-allowed cursor-progress'}`} disabled={loading}>
                             {loading ? 'Deleteing...' : 'Delete'}
                         </button>
                     </div>

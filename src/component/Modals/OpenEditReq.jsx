@@ -121,7 +121,7 @@ const OpenEditReq = ({ _id, closeEditComplint, Lodata }) => {
                     <label className="block text-sm font-medium pb-2">Priority<span className='text-red'>*</span></label>
                     <div className="mb-3 justify-items-center">
                         <div className="flex gap-2">
-                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Priority === "High" ? 'border-yellow-500' : ''}`}>
+                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Priority === "High" ? 'border-blue-500' : ''}`}>
                                 <input
                                     className="mr-2"
                                     type="radio"
@@ -132,7 +132,7 @@ const OpenEditReq = ({ _id, closeEditComplint, Lodata }) => {
                                 />
                                 High
                             </label>
-                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Priority === "Medium" ? 'border-yellow-500' : ''}`}>
+                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Priority === "Medium" ? 'border-blue-500' : ''}`}>
                                 <input
                                     className="mr-2"
                                     type="radio"
@@ -143,7 +143,7 @@ const OpenEditReq = ({ _id, closeEditComplint, Lodata }) => {
                                 />
                                 Medium
                             </label>
-                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Priority === "Low" ? 'border-yellow-500' : ''}`}>
+                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Priority === "Low" ? 'border-blue-500' : ''}`}>
                                 <input
                                     className="mr-2"
                                     type="radio"
@@ -159,7 +159,7 @@ const OpenEditReq = ({ _id, closeEditComplint, Lodata }) => {
                     <label className="block text-sm font-medium pb-2">Status<span className='text-red'>*</span></label>
                     <div className="mb-3 justify-items-center">
                         <div className="flex gap-2">
-                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Status === "Open" ? 'border-yellow-500' : ''}`}>
+                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Status === "Open" ? 'border-blue-500' : ''}`}>
                                 <input
                                     className="mr-2"
                                     type="radio"
@@ -170,7 +170,7 @@ const OpenEditReq = ({ _id, closeEditComplint, Lodata }) => {
                                 />
                                 Open
                             </label>
-                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Status === "Pending" ? 'border-yellow-500' : ''}`}>
+                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Status === "Pending" ? 'border-blue-500' : ''}`}>
                                 <input
                                     className="mr-2"
                                     type="radio"
@@ -181,7 +181,7 @@ const OpenEditReq = ({ _id, closeEditComplint, Lodata }) => {
                                 />
                                 Pending
                             </label>
-                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Status === "Solve" ? 'border-yellow-500' : ''}`}>
+                            <label className={`flex items-center px-5 py-2 border rounded-lg ${editComplaint.Status === "Solve" ? 'border-blue-500' : ''}`}>
                                 <input
                                     className="mr-2"
                                     type="radio"

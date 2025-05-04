@@ -65,7 +65,7 @@ const GetPassModal = ({ close }) => {
                             disabled={totalAmount === 0}
                             className={`px-4 py-2 w-1/2 rounded-lg font-semibold shadow-lg transition duration-200 ${totalAmount === 0
                                 ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                                : "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white hover:from-orange-600 hover:to-yellow-600"
+                                : "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white hover:from-blue-600 hover:to-blue-600"
                                 }`}
                         >
                             Get Pass

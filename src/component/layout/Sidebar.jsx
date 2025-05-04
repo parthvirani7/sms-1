@@ -60,7 +60,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname === "/manager/home" && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <MdDashboard className="inline mr-2" />
             Overview
@@ -74,7 +74,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/manager/resident_management") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <BsFillRecordBtnFill className="inline mr-2" />
             Member Directory
@@ -90,7 +90,7 @@ export default function Sidenav({ toggleNav, data }) {
           >
             {/* Active Indicator */}
             {/* {pathname.startsWith("/manager/financial_management") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <RiMoneyDollarBoxFill className="inline mr-2" />
             Billing & Payments
@@ -137,7 +137,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/manager/facility_management") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <FaCity className="inline mr-2" />
             Amenities & Resources
@@ -152,7 +152,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/manager/complaint_tracking") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <MdAttachEmail className="inline mr-2" />
             Issue Resolution
@@ -194,7 +194,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/manager/security_management") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <MdSecurity className="inline mr-2" />
             Safety & Security
@@ -234,7 +234,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/manager/security_guard") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <IoIosContact className="inline mr-2" />
             Guard Monitoring
@@ -248,7 +248,7 @@ export default function Sidenav({ toggleNav, data }) {
               }`}
           >
             {/* {pathname.startsWith("/manager/announcement") && (
-              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-orange-600 rounded-r-lg"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-2 bg-blue-600 rounded-r-lg"></div>
             )} */}
             <GrAnnounce className="inline mr-2" />
             Notices & Updates

@@ -146,7 +146,7 @@ const EditOIncome = ({ setEditIncome, initialData, onUpdate }) => {
             <button
               type="submit"
               className={`px-8 py-2 text-white rounded-md 
-                ${loading ? 'bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:from-orange-600 hover:to-yellow-600 cursor-not-allowed' : 'bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:from-orange-600 hover:to-yellow-600'}`}
+                ${loading ? 'bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:from-blue-600 hover:to-blue-600 cursor-not-allowed' : 'bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:from-blue-600 hover:to-blue-600'}`}
               disabled={loading}
             >
               {loading ? 'Edit...' : 'Continue'}

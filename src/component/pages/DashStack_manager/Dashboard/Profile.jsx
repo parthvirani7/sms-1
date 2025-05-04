@@ -283,7 +283,7 @@ const Profile = () => {
                     {!isEditable && (
                       <button
                         type="button"
-                        className="mt-4 sm:mt-6 px-4 sm:px-8 py-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-md hover:bg-orange-600 text-xs sm:text-sm"
+                        className="mt-4 sm:mt-6 px-4 sm:px-8 py-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded-md hover:bg-blue-600 text-xs sm:text-sm"
                         onClick={() => setIsEditable(true)}
                       >
                         View Profile
