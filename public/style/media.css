@@ -1,0 +1,161 @@
+@media (max-width: 2560px) {
+    .text_Description {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .title_text{
+        font-size: 50x;
+    }
+    .btn_bg{
+        font-size: 22px;
+    }
+    .F_text_dis{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .text_Description {
+        font-size: 20px;
+    }
+    .title_text{
+        font-size: 40px;
+    }
+    .btn_bg{
+        font-size: 18px;
+    }
+    .F_text_dis{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header_sign_in{
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .img_data{
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    .Componet_center{
+        align-items: center;
+    }
+    .section_1_col_6{
+        width: 100%;
+    }
+    /* ====== header ====== */
+    .header_top{
+        display: none !important;
+    }
+    /* ===== home ===== */
+    .title_text{
+        font-size: 30px;
+        text-align: center;
+    }
+    .text_Description {
+        font-size: 16px;
+        text-align: center;
+    }
+    .btn_bg{
+        font-size: 16px;
+    }
+    .Btn_show{
+        text-align: center;
+    }
+    .Worlds_best_img{
+        width: 100%;
+        text-align: center;
+    }
+    .Worlds_best_img_1{
+        width: 28rem;
+    }
+    .Courses_col_4{
+        width: 50%;   
+    }
+    /* footer */
+    .F_col_8{
+        flex-direction: column;
+    }
+    .F_col_6{
+        width: 100%;
+        text-align: center;
+    }
+    .follw_up{
+        display: none !important;
+    }
+    .Parents_col{
+        width: 100%;
+    }
+    .row_last_f{
+        flex-direction: column;
+    }
+    .col_last_6{
+        width: 100%;
+        border-right: 0px solid #fff !important;
+    }
+    .text_F_last{
+        text-align: center;
+    }
+}
+@media (max-width: 426px) {
+    /* home */
+    .title_text{
+        font-size: 30px;
+    }
+    .btn_bg{
+        font-size: 15px;
+    }
+    .Worlds_best_img_1{
+        width: 20rem;
+    }
+    .Courses_col_4{
+        width: 90%;   
+    }
+    /* footer */
+    .row_fast{
+        flex-direction: column;
+    }
+    .col_fast{
+        width: 100%;
+        justify-content: center;
+    }
+    .Logo_f{
+        margin-bottom: 15px;
+    }
+    .rwo_secd{
+        flex-direction: column;
+    }
+    .col_secd{
+        width: 100%;
+        justify-content: center;
+        border: 0px solid #fff !important;
+    }
+    .secd_text{
+        text-align: center;
+    }
+    .Col_SECD_4{
+        padding: 10px 0px 10px 0px !important;
+    }
+}
+
+@media (max-width: 376px) {
+    /* home */
+    .title_text{
+        font-size: 26px;
+    }
+    .Worlds_best_img_1{
+        width: 18rem;
+    }
+}
+
+@media (max-width: 320px) {
+    /* home */
+    .title_text{
+        font-size: 22px;
+    }
+}
